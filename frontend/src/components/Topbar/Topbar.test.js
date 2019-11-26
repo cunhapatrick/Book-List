@@ -3,15 +3,20 @@ import { shallow } from 'enzyme';
 import Topbar from './Topbar';
 
 describe('Testing Topbar Component', () => {
-  it('should render properly', () => {
-    const wrapper = shallow(
+
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(
       <Topbar
         handleFilter={() => {}}
         handleSearch={() => {}}
         loading={true}
       />
     );
+  });
 
+  it('should render properly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

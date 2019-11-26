@@ -3,8 +3,11 @@ import { shallow } from 'enzyme';
 import List from './List';
 
 describe('Testing List Component', () => {
-  it('should render properly', () => {
-    const wrapper = shallow(
+
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(
       <List
         books={[{
           _id: 1,
@@ -14,7 +17,9 @@ describe('Testing List Component', () => {
         handleDetalhes={() => {}}
       />
     );
+  });
 
+  it('should render properly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -3,8 +3,11 @@ import { shallow } from 'enzyme';
 import Filterbar from './Filterbar';
 
 describe('Testing Filterbar Component', () => {
-  it('should render properly', () => {
-    const wrapper = shallow(
+  
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(
       <Filterbar
         iData={1998}
         eData={2019}
@@ -13,6 +16,9 @@ describe('Testing Filterbar Component', () => {
         handleEData={() => {}}
       />
     );
+  })
+
+  it('should render properly', () => {
 
     expect(wrapper).toMatchSnapshot();
   });

@@ -3,8 +3,11 @@ import { shallow } from 'enzyme';
 import Modal from './Modal';
 
 describe('Testing Modal Component', () => {
-  it('should render properly', () => {
-    const wrapper = shallow(
+
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(
       <Modal
         closeModal={() => {}}
         show={true}
@@ -14,7 +17,9 @@ describe('Testing Modal Component', () => {
         }}
       />
     );
+  });
 
+  it('should render properly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
