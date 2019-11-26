@@ -1,0 +1,50 @@
+{
+  "name": "super_backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "supero backend teste",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "debug": "DEBUG=express:* npm start",
+    "appSecretGenerate": "node src/scripts/utils/appSecretGenerate.js"
+  },
+  "keywords": [],
+  "author": "Patrick D Paulo Baia Cunha",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "express-async-handler": "^1.1.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "express-validation": "^1.0.2",
+    "joi": "^14.3.0",
+    "kue": "^0.11.6",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.8",
+    "mongoose-paginate": "^5.0.3",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^4.7.0",
+    "nodemailer-express-handlebars": "^3.0.0",
+    "require-dir": "^1.2.0",
+    "rimraf": "^2.6.2",
+    "youch": "^2.0.10"
+  },
+  "devDependencies": {
+    "debug": "^4.1.0",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.7"
+  }
+}

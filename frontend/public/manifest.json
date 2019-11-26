@@ -1,0 +1,8 @@
+{
+  "short_name": "Supero Frontend",
+  "name": "Supero Frontend Teste",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
