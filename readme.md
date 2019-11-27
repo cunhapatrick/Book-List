@@ -1,4 +1,4 @@
-# supero_teste
+# Book List
 
 ## Description
 This application was make for a test purpose, It's a complete project to list books from a database, with pagination, search and filter engine on frontend side and a REST API with endpoints to provide the required services.
